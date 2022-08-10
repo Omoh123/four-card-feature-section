@@ -1,0 +1,136 @@
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--VeryDarkBlue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color:var(--VeryLightGray);
+}
+
+/*{
+    border:1px solid black;
+}*/
+
+main{
+    margin:0 auto;
+    
+}
+
+.container{
+margin:50px;
+text-align:center;
+}
+
+#card-holder{
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+gap:2em;
+place-items: center;
+padding:5px;
+margin-top:50px;
+}
+
+h1{
+    color:var(--VeryDarkBlue);
+    font-weight: lighter;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2,h3{
+    color:var(--VeryDarkBlue);
+    font-weight: bold;
+}
+
+p{
+    color:var(--Grayish-Blue);
+    font-size: rem;
+    line-height: 1.2;
+}
+
+.card1{
+    background-color:white;
+    min-width:50%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: var(--VeryLightGray);
+    text-align: left;
+    padding:30px;
+    border-top: 4.5px outset var(--Blue);
+    grid-row:1/3;
+    grid-column: 1;
+}
+
+.card2{
+    background-color:white;
+    min-width:50%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: var(--VeryLightGray);
+    text-align: left;
+    padding:30px;
+    border-top: 4.5px outset var(--Red);
+    grid-column:2;
+    grid-row:1;
+}
+
+.card3{
+    background-color:white;
+    min-width:50%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: var(--VeryLightGray);
+    text-align: left;
+    padding:30px;
+    border-top: 4.5px outset var(--Orange);
+    grid-column:2;
+    grid-row:2;
+}
+
+.card4{
+    background-color:white;
+    min-width:50%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: var(--VeryLightGray);
+    text-align: left;
+    padding:30px;
+    border-top: 4.5px outset var(--Blue);
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+.div-svg{
+    text-align: right;
+    margin-top: 50px;
+}
+
+.attribution { 
+font-size: 11px; 
+text-align: center; 
+}
+
+.attribution a {
+color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:768px){
+    #card-holder{
+        display:block;
+        padding:5px;
+        margin:10%;
+    }
+
+    .card1,.card2,.card3,.card4{
+        margin-bottom: 30px;
+    }
+
+
+
+}
